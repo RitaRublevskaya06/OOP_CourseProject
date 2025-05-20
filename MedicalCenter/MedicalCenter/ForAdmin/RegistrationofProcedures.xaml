@@ -1,0 +1,47 @@
+﻿<Window x:Class="MedicalCenter.ForAdmin.RegistrationofProcedures"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedicalCenter"
+        mc:Ignorable="d"
+            WindowStartupLocation="CenterScreen"
+    Title="RegistrationofProcedures"  Width="684"  Height="830" MinHeight="830" MaxHeight="836" MaxWidth="684" MinWidth="684">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="127"/>
+            <ColumnDefinition Width="429"/>
+            <ColumnDefinition Width="127"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="105"/>
+            <RowDefinition Height="95"/>
+            <RowDefinition Height="95"/>
+            <RowDefinition Height="141.077"/>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="77.6"/>
+
+            <RowDefinition Height="67*"/>
+        </Grid.RowDefinitions>
+        <Image Source="/image/LOGO1.png" Margin="93.8,0,95,5.8" Height="92" VerticalAlignment="Bottom" Grid.Column="1"/>
+        <TextBox Name="Decription" GotFocus="Decription_GotFocus" LostFocus="Decription_LostFocus" Style="{StaticResource For_TextBox_2}" HorizontalAlignment="Left" Height="140" Margin="11.8,94,0,0" Grid.Row="2" TextWrapping="Wrap" Text="краткое описание" VerticalAlignment="Top" Width="405" Grid.Column="1" Grid.RowSpan="2" />
+        <TextBox x:Name="Name"  GotFocus="Name_GotFocus" LostFocus="Name_LostFocus" Style="{StaticResource For_TextBox}" HorizontalAlignment="Left" Height="80" Margin="11.8,103,0,0" TextWrapping="NoWrap" Text="название" VerticalAlignment="Top" Width="405" Grid.Column="1" Grid.RowSpan="2"/>
+        <TextBox x:Name="Price" GotFocus="Price_GotFocus" LostFocus="Price_LostFocus" Style="{StaticResource For_TextBox}" HorizontalAlignment="Left" Height="80" Margin="11.8,0,0,14.2" Grid.Row="2" TextWrapping="NoWrap" Text="цена" VerticalAlignment="Bottom" Width="405" Grid.Column="1"></TextBox>
+        <ComboBox Name="Spezialization" Style="{StaticResource RoundComboBoxStyle}" FontFamily="Inter" FontSize="15" Foreground="#565656"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="313" Margin="13.8,32,0,0" Grid.Row="5" Height="39" Grid.Column="1">
+            <ComboBoxItem Content="Выберите"/>
+        </ComboBox>
+
+
+        <Button  Style="{StaticResource Button_for_login}" Name="registr"  Content="Регистрация" HorizontalAlignment="Left" VerticalAlignment="Top" Width="405" Margin="9.8,37.4,0,0" Grid.Row="6" Height="80" Click="Button_Click" RenderTransformOrigin="0.558,1.645" Grid.Column="1"/>
+        <Button  Style="{StaticResource Button_for_login}" Name="edit"  Content="Изменить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="202" Margin="127,37.4,0,0" Grid.Row="6" Height="80" Click="edit_Click" RenderTransformOrigin="0.558,1.645" Grid.ColumnSpan="2"/>
+        <Button  Style="{StaticResource Button_for_login}" Name="exit"  Content="Вернуться" HorizontalAlignment="Left" VerticalAlignment="Top" Width="202" Margin="226.8,37.4,0,0" Grid.Row="6" Height="80" Click="exit_Click" RenderTransformOrigin="0.558,1.645" Grid.Column="1"/>
+        <Image  Margin="20.8,10,352,28.2" Grid.Row="2" Source="/image/price-tag.png" Stretch="Fill" Grid.Column="1" RenderTransformOrigin="0.725,3.1"/>
+        <Image  Margin="20.8,35.8,352,44" Grid.Row="3" Source="/image/policy.png" Stretch="Fill" Grid.Column="1" RenderTransformOrigin="0.725,3.1"/>
+        <Image  Margin="20.8,10.2,352,28" Source="/image/injection.png" Stretch="Fill" Grid.Column="1" RenderTransformOrigin="0.725,3.1" Grid.Row="1"/>
+        <TextBlock Style="{StaticResource Textgrey}" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Специальность:" VerticalAlignment="Top" Margin="24.8,0,0,0" Grid.Row="5" Width="230" Height="35" Grid.Column="1" />
+        <Image x:Name="Photo" Grid.Column="1" HorizontalAlignment="Left" Height="104" Margin="24.8,19,0,0" Grid.Row="4" VerticalAlignment="Top" Width="105"/>
+        <Button x:Name="TakePhoto" Click="TakePhoto_Click" Style="{StaticResource Button_grey}" Content="Добавить фото" HorizontalAlignment="Left" VerticalAlignment="Top" Width="161" Grid.Column="1" Margin="218.8,56,0,0" Grid.Row="4" Height="36"/>
+        <TextBlock Name="Warring" Foreground="#FFABAB"  Style="{StaticResource Textgrey}" HorizontalAlignment="Left" TextWrapping="NoWrap"  Text="" VerticalAlignment="Top"  FontSize="20"  Width="494" Margin="96,8.4,0,0" Grid.Row="6" Grid.ColumnSpan="3"/>
+        <Image x:Name="Yesornologine" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="68" Grid.Column="2" Margin="0,10.2,0,0" Grid.Row="1"/>
+    </Grid>
+</Window>

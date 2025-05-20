@@ -1,0 +1,93 @@
+﻿<Page x:Class="MedicalCenter.ForUser.Profil"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MedicalCenter.ForUser"
+      mc:Ignorable="d" 
+        d:DesignHeight="823" d:DesignWidth="1013"
+  MinHeight="823" MinWidth="1013"
+  Title="Profil">
+    <ScrollViewer 
+VerticalScrollBarVisibility="Auto" 
+HorizontalScrollBarVisibility="Disabled">
+
+        <Grid Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="320"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="140"/>
+                <RowDefinition Height="158"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <!-- Заголовок -->
+            <TextBlock Style="{StaticResource Textgrey}" 
+               HorizontalAlignment="Center" 
+               Text="Ваше здоровье - наша забота" 
+               Grid.Row="0" 
+               Margin="0,13,0,13" Width="392"/>
+
+            <!-- Личные данные -->
+            <Grid Grid.Row="1" Margin="0,0,17,0">
+                <TextBlock  Style="{StaticResource Textgrey}"  HorizontalAlignment="Left" TextWrapping="Wrap" Text="Имя:" VerticalAlignment="Top" Margin="421,75.2,0,0" Grid.Row="1"/>
+                <TextBlock  Style="{StaticResource Textgrey}"  HorizontalAlignment="Left" TextWrapping="Wrap" Text="Фамилия:" VerticalAlignment="Top" Margin="421,132.2,0,0" Grid.Row="1"/>
+                <TextBlock  Style="{StaticResource Textgrey}"  HorizontalAlignment="Left" TextWrapping="Wrap" Text="Почта:" VerticalAlignment="Top" Margin="421,195.2,0,0" Grid.Row="1" RenderTransformOrigin="0.556,1.55"/>
+                <TextBox x:Name="Name" LostFocus="Name_LostFocus" GotFocus="Name_GotFocus" Style="{StaticResource For_readonly}" HorizontalAlignment="Left"  Height="51" Margin="567,69.2,0,0" Grid.Row="1" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="359" IsReadOnly="True" />
+                <TextBox x:Name="Surname" LostFocus="Surname_LostFocus" GotFocus="Surname_GotFocus" Style="{StaticResource For_readonly}" HorizontalAlignment="Left" Height="51" Margin="567,128.2,0,0" Grid.Row="1" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="359" IsReadOnly="True" />
+                <TextBox x:Name="Email" Style="{StaticResource For_readonly}" LostFocus="Email_LostFocus" HorizontalAlignment="Left" Height="51" Margin="567,187.2,0,0" Grid.Row="1" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="359" IsReadOnly="True" />
+                <TextBlock  Style="{StaticResource Textgrey}"  HorizontalAlignment="Left" TextWrapping="Wrap" Text="Личные данные" VerticalAlignment="Top" Margin="717,2.2,0,0" Grid.Row="1"/>
+                <Image Name="face" Margin="93,18.2,702.8,72.8" Source="/image/add.png" Grid.Row="1"/>
+                <Image x:Name="Delete" Margin="229,236.2,721.8,7.8" Source="/image/bin (1).png" Grid.Row="1" MouseDown="Delete_MouseDown"/>
+                <Image Margin="114,238.2,843.8,11.8" Source="/image/add.png" RenderTransformOrigin="0.5,0.5" Grid.Row="1" MouseDown="Image_MouseDown">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="-1"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Name="Check"  HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="46" Margin="931,192.2,0,0" Grid.Row="1"/>
+                <Image Name="Check1"  HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="46" Margin="931,135.2,0,0" Grid.Row="1"/>
+                <Image Name="Check2"  HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="46" Margin="931,69.2,0,0" Grid.Row="1"/>
+                <Button Name="Acceptchanges" Click="Acceptchanges_Click" Style="{StaticResource Button_green}" Content="изменить" Width="175" Height="41" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="567,255.2,0,0" Grid.Row="1"/>
+                <Button x:Name="Edit" Style="{StaticResource Button_green}" Content="редактировать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="175" Height="41" Margin="751,255.2,0,0" Grid.Row="1"  Click="Edit_Click"/>
+            </Grid>
+
+            <!-- Секция смены пароля -->
+            <Grid Grid.Row="2" Margin="0,0,17,0" Grid.RowSpan="2">
+                <TextBlock  Style="{StaticResource Textgrey}"  HorizontalAlignment="Left" TextWrapping="Wrap" Text="Хотите изменить пароль?" VerticalAlignment="Top" Margin="628,15,0,0" Height="36" Width="344"/>
+                <TextBox x:Name="Password" LostFocus="Password_LostFocus" GotFocus="Password_GotFocus" Style="{StaticResource For_TextBox}" HorizontalAlignment="Left" Height="80" Margin="570,57,0,0" TextWrapping="NoWrap" Text="Введите нынешний" VerticalAlignment="Top" Width="405" />
+                <TextBox x:Name="newPassword"  Style="{StaticResource For_TextBox}" GotFocus="newPassword_GotFocus" LostFocus="newPassword_LostFocus" HorizontalAlignment="Left" Height="80" Margin="567,150,0,0" TextWrapping="NoWrap" Text="Введите новый" VerticalAlignment="Top" Width="405"/>
+                <Button  Style="{StaticResource Button_green}" Content="изменить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="179" Margin="793,244,0,0" Height="41" Click="Button_Click" />
+                <TextBlock Name="Warring" Foreground="#FFABAB"  Style="{StaticResource Textgrey}" HorizontalAlignment="Left" TextWrapping="NoWrap"  Text="" VerticalAlignment="Top"  FontSize="20"  Width="355" Margin="399,336.2,0,0" Grid.Row="2"/>
+                <Button Style="{StaticResource Button_grey}" 
+                Content="МОИ ЗАКАЗЫ" 
+                Margin="58,10.2,660.8,244" 
+                Grid.Row="2" 
+                Name="Ord" 
+                Click="Ord_Click" Height="35" RenderTransformOrigin="0.501,0.327"/>
+
+            </Grid>
+
+            <!-- Секция с рецептами -->
+            <StackPanel Grid.Row="4" Margin="10,20,27,10">
+                <TextBlock Text="Назначенные рецепты:" 
+                   Style="{StaticResource Textgrey}"
+                   FontSize="20"
+                   Margin="0,0,0,10"/>
+
+                <DataGrid x:Name="PrescriptionsDataGrid" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Врач" Binding="{Binding DoctorName}"/>
+                        <DataGridTextColumn Header="Дата" Binding="{Binding PrescriptionDate}"/>
+                        <DataGridTextColumn Header="Рецепт" Binding="{Binding PrescriptionText}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>

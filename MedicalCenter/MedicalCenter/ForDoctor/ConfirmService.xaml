@@ -1,0 +1,72 @@
+﻿<Window x:Class="MedicalCenter.ForDoctor.ConfirmService"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedicalCenter.ForDoctor"
+        xmlns:classes="clr-namespace:MedicalCenter.Classes"
+        mc:Ignorable="d"
+        d:DesignHeight="823" d:DesignWidth="1013"
+        Title="ConfirmService" MinHeight="823" MinWidth="1013">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="69"/>
+            <RowDefinition Height="55"/>
+            <RowDefinition Height="50.8"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Style="{StaticResource Textgrey}" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Ваше здоровье - наша забота" VerticalAlignment="Center" FontSize="36" Width="496" Grid.Row="0" Height="43"/>
+        <TextBlock Style="{StaticResource Textgrey}" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Активные заказы всех клиентов" VerticalAlignment="Top" Margin="258,13,0,0" FontSize="36" Width="508" Grid.Column="0" Grid.Row="1" Height="43" Grid.RowSpan="2"/>
+        <DataGrid x:Name="OrdersGrid" 
+                Grid.Row="2" 
+                Margin="1,1,-2,0"
+                Height="539"
+                VerticalAlignment="Top"
+                AutoGenerateColumns="False"
+                CanUserAddRows="False"
+                ItemsSource="{Binding}" Grid.RowSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер заказа" Binding="{Binding Order_number}" Width="100"/>
+                <DataGridTextColumn Header="ID Врача" Binding="{Binding ID_DoctorValue}" Width="60"/>
+                <DataGridTextColumn Header="Врач" Binding="{Binding ID_Doctor}" Width="80"/>
+                <DataGridTextColumn Header="Цена" Binding="{Binding Price}" Width="80"/>
+                <DataGridTextColumn Header="Купон" Binding="{Binding ID_Coupon}" Width="80"/>
+                <DataGridTextColumn Header="Дата" Binding="{Binding Date}" Width="100"/>
+                <DataGridTextColumn Header="Время" Binding="{Binding Time}" Width="80"/>
+                <DataGridTextColumn Header="ID Клиента" Binding="{Binding ID_ClientValue}" Width="60"/>
+                <DataGridTextColumn Header="Клиент" Binding="{Binding ID_Client}" Width="80"/>
+                <DataGridTextColumn Header="Процедура" Binding="{Binding Name_Procedures}" Width="100"/>
+
+                <!-- Новая колонка с кнопкой подтверждения -->
+                <DataGridTemplateColumn Header="Подтверждение">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Подтвердить оказание" 
+                    Click="ConfirmService_Click"
+                    Visibility="{Binding IsDoctor, Converter={StaticResource BoolToVisibilityConverter}}"
+                    Style="{StaticResource Button_green_withoutanimation}"
+                    Padding="10 5"
+                    Margin="5"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <!-- Колонка с кнопкой отмены оказания услуги -->
+                <DataGridTemplateColumn Header="Отмена">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Отменить оказание"
+                Click="CancelService_Click"
+                Visibility="{Binding IsDoctor, Converter={StaticResource BoolToVisibilityConverter}}"
+                Style="{StaticResource Button_green_withoutanimation}"
+                Padding="10 5"
+                Margin="5"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

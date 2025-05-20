@@ -1,0 +1,14 @@
+﻿<Window x:Class="MedicalCenter.Windows.MessangeBox_Ok"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedicalCenter"
+            mc:Ignorable="d"
+    Title="MessangeBox_Ok"  Height="296" Width="557" MinHeight="296" MinWidth="557" MaxHeight="296" MaxWidth="557"
+    WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="Оk" Style="{StaticResource Button_grey_big}" Content="Ок" VerticalAlignment="Bottom" Height="54"  Click="Оk_Click" Margin="145,0,145,10.4"/>
+        <TextBlock Name="Messange"  Style="{StaticResource Textgrey}" TextWrapping="Wrap"  VerticalAlignment="Center" FontSize="38" Grid.Row="0" Height="110" Margin="30,67,30,89.4"/>
+    </Grid>
+</Window>

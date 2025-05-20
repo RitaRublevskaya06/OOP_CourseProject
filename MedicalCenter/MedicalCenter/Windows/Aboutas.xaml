@@ -1,0 +1,46 @@
+﻿<Page x:Class="MedicalCenter.Windows.Aboutas"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+      xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
+      xmlns:local="clr-namespace:MedicalCenter.Windows"
+      mc:Ignorable="d" 
+      d:DesignHeight="823" d:DesignWidth="1013"
+      MinHeight="823" MinWidth="1013"
+      Title="Aboutas">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="69"/>
+            <RowDefinition Height="240.8"/>
+            <RowDefinition Height="436"/>
+        </Grid.RowDefinitions>
+        <TextBlock Style="{StaticResource Textgrey}" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Ваше здоровье - наша забота" VerticalAlignment="Center" FontSize="36" Width="496" Grid.Row="0" Height="43"/>
+
+        <TextBlock Style="{StaticResource Text_for_registration}" HorizontalAlignment="Left" Margin="79,72.4,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="482" FontSize="18" Height="176" Grid.RowSpan="2" Text="«Harmony» – крупнейший негосударственный многопрофильный медицинский центр Беларуси. С момента основания в 2025 году «Harmony» успешно сохраняет свои лидирующие позиции на рынке медуслуг страны благодаря внедрению в практику самых передовых методов диагностики и лечения, внимательному, индивидуальному подходу к каждому пациенту и высокому уровню сервиса."/>
+        <Image Margin="692,10.4,75.8,10.2" Source="/image/hospital.png" Grid.Row="1"/>
+        <Image Width="291" Source="/image/LOGO1.png" Stretch="Fill" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Margin="84,12,0,182"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="289"/>
+                <ColumnDefinition Width="724*"/>
+            </Grid.ColumnDefinitions>
+
+        </Grid>
+        <m:Map CredentialsProvider="AttsGkqIHCOIEA11KtQZDphl5bi8lppin64jeg-ZOOhiS4cdHA_EXJwHSbyZi4Xo" Mode="Road" Grid.Row="2" ZoomLevel="16" Center="53.887585, 27.566213" Margin="293,175.8,306.8,-45">
+            <Canvas
+    m:MapLayer.Position="53.887585, 27.566213"
+    m:MapLayer.PositionOrigin="BottomCenter" Width="30" Height="30">
+                <Image Source="/image/pin.png" Height="30" RenderTransformOrigin="0.5,0.5" Width="30"/>
+            </Canvas>
+        </m:Map>
+        <Image Margin="0,6.8,739.8,376" Grid.Row="2" Source="/image/line.png" Stretch="Fill"/>
+        <Image Margin="740,241.4,-0.2,371" Grid.Row="1" Source="/image/line.png" Stretch="Fill" Grid.RowSpan="2"/>
+        <TextBlock Style="{StaticResource Textblack}" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Контактная Информация" Margin="318,21.8,306.8,377" Grid.Row="2" Width="388"/>
+        <TextBlock Style="{StaticResource Textgrey}" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Тел: +375(33)-123-45-67 " VerticalAlignment="Top" Margin="59,88.8,0,0" Grid.Row="2" FontSize="32"/>
+        <TextBlock Style="{StaticResource Textgrey}" HorizontalAlignment="Right" TextWrapping="Wrap" Text="Адрес: г.Минск, ул.Свердлова 1к10 " VerticalAlignment="Top" Margin="0,88.8,21.8,0" Grid.Row="2" FontSize="32" Width="481"/>
+    </Grid>
+</Page>

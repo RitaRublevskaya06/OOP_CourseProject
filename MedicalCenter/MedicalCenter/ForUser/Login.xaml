@@ -1,0 +1,35 @@
+﻿<Page x:Class="MedicalCenter.ForUser.Login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MedicalCenter.ForUser"
+      mc:Ignorable="d" 
+      d:DesignHeight="823" d:DesignWidth="684"
+      Title="Login">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="127"/>
+            <ColumnDefinition Width="429"/>
+            <ColumnDefinition Width="127"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="116.8"/>
+            <RowDefinition Height="118"/>
+            <RowDefinition Height="102.4"/>
+            <RowDefinition Height="139"/>
+            <RowDefinition Height="54"/>
+            <RowDefinition Height="164*"/>
+        </Grid.RowDefinitions>
+        <Image Source="/image/LOGO1.png" Margin="85.8,0,102.8,26.8" Height="94" VerticalAlignment="Bottom" Grid.Column="1" Grid.RowSpan="2"/>
+        <TextBox x:Name="Logine" GotFocus="Login_GotFocus" LostFocus="Login_LostFocus" Style="{StaticResource For_TextBox}" HorizontalAlignment="Left" Height="80" Margin="14.8,24.2,0,0" Grid.Row="2" TextWrapping="NoWrap" Text="логин" VerticalAlignment="Top" Width="405" Grid.Column="1" />
+        <TextBox x:Name="Password" GotFocus="Password_GotFocus" LostFocus="Password_LostFocus" Style="{StaticResource For_TextBox}" HorizontalAlignment="Left" Height="80" Margin="14.8,13.8,0,0" Grid.Row="3" TextWrapping="NoWrap" Text="пароль" VerticalAlignment="Top" Width="405" Grid.Column="1"/>
+        <Button  Style="{StaticResource Button_for_login}" Content="Войти" HorizontalAlignment="Left" VerticalAlignment="Top" Width="405" Margin="9.8,49.4,0,0" Grid.Row="4" Height="80" Grid.Column="1" Click="Button_Click"/>
+        <TextBlock Style="{StaticResource Text_for_registration}" HorizontalAlignment="Left" TextWrapping="Wrap" Text="У вас ещё нет аккаунта?" VerticalAlignment="Top" Margin="55.8,22.2,0,0" Grid.Row="6" Width="314" Height="33" Grid.Column="1"/>
+        <TextBlock Style="{StaticResource registration}" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Зарегистрироваться" VerticalAlignment="Top" Margin="76.8,55.2,0,0" Grid.Row="6" Width="265" Height="33" Grid.Column="1" MouseDown="TextBlock_MouseDown"/>
+        <Image Margin="27.8,40.2,350.8,26.2" Grid.Row="2" Source="/image/user.png" Stretch="Fill" Grid.Column="1"/>
+        <Image Grid.Column="1" Margin="27.8,28.8,350.8,22.6" Grid.Row="3" Source="/image/key.png" Stretch="Fill" RenderTransformOrigin="0.482,0.04"/>
+        <TextBlock Name="Warring" Foreground="#FFABAB"  Style="{StaticResource Textgrey}" HorizontalAlignment="Left" TextWrapping="NoWrap"  Text="" VerticalAlignment="Top" Grid.Column="1" Margin="39.8,20.8,0,0" Grid.Row="4" FontSize="20" RenderTransformOrigin="-1.732,0.483" Width="355"/>
+    </Grid>
+</Page>

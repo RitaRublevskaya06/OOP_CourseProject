@@ -1,0 +1,57 @@
+﻿<Window x:Class="MedicalCenter.ForAdmin.AddTalon"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedicalCenter"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="AddTalon" Width="1100" MaxWidth="1100" MinWidth="1100" Height="630" MinHeight="630" MaxHeight="630">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="127"/>
+            <ColumnDefinition Width="429"/>
+            <ColumnDefinition Width="127"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="105"/>
+            <RowDefinition Height="95"/>
+            <RowDefinition Height="95"/>
+            <RowDefinition Height="141.077"/>
+
+
+            <RowDefinition Height="67*"/>
+        </Grid.RowDefinitions>
+        <Image Source="/image/LOGO1.png" Margin="93.8,0,95,5.8" Height="92" VerticalAlignment="Bottom" Grid.Column="1"/>
+
+
+
+
+        <Button  Style="{StaticResource Button_for_login}" Content="Добавить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="405" Margin="11.8,50,0,0" Grid.Row="4" Height="80"  RenderTransformOrigin="0.558,1.645" Grid.Column="1" Click="Button_Click"/>
+
+        <ComboBox Name="Doctorname" Style="{StaticResource RoundComboBoxStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="233"  Margin="93.8,54,0,0"  FontFamily="Inter" FontSize="15" Foreground="#565656"  Grid.Row="2" Height="31" DropDownClosed="Doctorname_DropDownClosed"  Grid.Column="1">
+            <ComboBoxItem Content="Врач"/>
+        </ComboBox>
+        <ComboBox Name="Dateone" Style="{StaticResource RoundComboBoxStyle}" DropDownClosed="Dateone_DropDownClosed_1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="182"  Margin="127,65.8,0,0"  FontFamily="Inter" FontSize="15" Foreground="#565656"  Grid.Row="3" Height="29" Grid.ColumnSpan="2">
+        </ComboBox>
+        <TextBlock Name="Warring" Foreground="#FFABAB"  Style="{StaticResource Textgrey}" HorizontalAlignment="Left" TextWrapping="NoWrap"  Text="" VerticalAlignment="Top"  FontSize="20"  Width="355" Grid.Column="1" Margin="32.8,10,0,0" Grid.Row="4"/>
+        <ComboBox x:Name="Datetwo" Style="{StaticResource RoundComboBoxStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="182"  Margin="236.8,65.8,0,0"  FontFamily="Inter" FontSize="15" Foreground="#565656"  Grid.Row="3" Height="29" Grid.Column="1">
+        </ComboBox>
+        <ComboBox x:Name="Mondfrom" Style="{StaticResource RoundComboBoxStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185"  Margin="129.4,55.2,-186.4,0"  FontFamily="Inter" FontSize="15" Foreground="#565656"  Grid.Row="1" Height="30" Grid.Column="2"/>
+        <ComboBox x:Name="Mondto" Style="{StaticResource RoundComboBoxStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185"  Margin="336.4,55.2,-393.4,0"  FontFamily="Inter" FontSize="15" Foreground="#565656"  Grid.Row="1" Height="30" Grid.Column="2" RenderTransformOrigin="1.116,1.386"/>
+        <ComboBox x:Name="Tuefrom" Style="{StaticResource RoundComboBoxStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185"  Margin="129.4,12,-186.4,0"  FontFamily="Inter" FontSize="15" Foreground="#565656"  Grid.Row="2" Height="30" Grid.Column="2"/>
+        <ComboBox x:Name="Tueto" Style="{StaticResource RoundComboBoxStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185"  Margin="336.4,12,-393.4,0"  FontFamily="Inter" FontSize="15" Foreground="#565656"  Grid.Row="2" Height="30" Grid.Column="2"/>
+        <ComboBox x:Name="Wento" Style="{StaticResource RoundComboBoxStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185"  Margin="336.4,65,-393.4,0"  FontFamily="Inter" FontSize="15" Foreground="#565656"  Grid.Row="2" Height="30" Grid.Column="2"/>
+        <ComboBox x:Name="Wenfrom" Style="{StaticResource RoundComboBoxStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185"  Margin="129.4,65,-186.4,0"  FontFamily="Inter" FontSize="15" Foreground="#565656"  Grid.Row="2" Height="30" Grid.Column="2"/>
+        <ComboBox x:Name="Thufrom" Style="{StaticResource RoundComboBoxStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185"  Margin="129.4,19.8,-186.4,0"  FontFamily="Inter" FontSize="15" Foreground="#565656"  Grid.Row="3" Height="30" Grid.Column="2"/>
+        <ComboBox x:Name="Thuto" Style="{StaticResource RoundComboBoxStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185"  Margin="336.4,19.8,-393.4,0"  FontFamily="Inter" FontSize="15" Foreground="#565656"  Grid.Row="3" Height="30" Grid.Column="2"/>
+        <ComboBox x:Name="Frito" Style="{StaticResource RoundComboBoxStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185"  Margin="336.4,68.8,-393.4,0"  FontFamily="Inter" FontSize="15" Foreground="#565656"  Grid.Row="3" Height="30" Grid.Column="2"/>
+        <ComboBox x:Name="Frifrom" Style="{StaticResource RoundComboBoxStyle}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185"  Margin="129.4,68.8,-186.4,0"  FontFamily="Inter" FontSize="15" Foreground="#565656"  Grid.Row="3" Height="30" Grid.Column="2"/>
+        <TextBlock Style="{StaticResource Textgrey}" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Пн:" VerticalAlignment="Top" Margin="0.4,49.2,0,0" FontSize="36" Width="96" Grid.Column="2" Grid.Row="1" Height="43" RenderTransformOrigin="0.5,0.5"/>
+        <TextBlock Style="{StaticResource Textgrey}" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Вт:" VerticalAlignment="Top" Margin="0.4,4,0,0" FontSize="36" Width="96" Grid.Column="2" Grid.Row="2" Height="43" RenderTransformOrigin="0.5,0.5"/>
+        <TextBlock Style="{StaticResource Textgrey}" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="0.4,6.8,0,0" FontSize="36" Width="96" Grid.Column="2" Grid.Row="3" Height="43" RenderTransformOrigin="0.5,0.5"><Run Text="Чт"/><Run Text=":"/></TextBlock>
+        <TextBlock Style="{StaticResource Textgrey}" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ср:" VerticalAlignment="Top" Margin="0.4,52,0,0" FontSize="36" Width="96" Grid.Column="2" Grid.Row="2" Height="43" RenderTransformOrigin="0.5,0.5"/>
+        <TextBlock Style="{StaticResource Textgrey}" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="0.4,55.8,0,0" FontSize="36" Width="96" Grid.Column="2" Grid.Row="3" Height="43" RenderTransformOrigin="0.5,0.5"><Run Text="Пт"/><Run Text=":"/></TextBlock>
+        <TextBlock Style="{StaticResource Textgrey}" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Расписание:" VerticalAlignment="Top" Margin="191.4,0.2,-330.4,0" FontSize="36" Width="267" Grid.Column="2" Height="43" RenderTransformOrigin="0.5,0.5" Grid.Row="1"/>
+    </Grid>
+</Window>

@@ -1,0 +1,734 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="Button_for_login" TargetType="Button">
+        <Setter Property="Background" Value="#C8FFFF"/>
+        <Setter Property="Foreground" Value="#565656"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="40" Background="{TemplateBinding Background}" BorderThickness="1">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                        </ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+    <Style x:Key="Text_for_guest" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="TextDecorations" Value="Underline"/>
+        <Setter Property="Foreground" Value="DarkGray"/>
+    </Style>
+    <Style x:Key="Text_for_doctor" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="TextDecorations" Value="Underline"/>
+        <Setter Property="Foreground" Value="DarkGray"/>
+    </Style>
+    <Style x:Key="Text_for_registration" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+    </Style>
+    <Style x:Key="registration" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="Foreground" Value="#00D7D7"/>
+    </Style>
+    <Style x:Key="Textgrey" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="Foreground" Value="#565656"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+    </Style>
+    <Style x:Key="Textblack" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+    </Style>
+    <Style x:Key="For_TextBox"  TargetType="TextBox">
+        <Setter Property="Background" Value="#EDECEC"  />
+        <Setter Property="BorderBrush" Value="#EDECEC" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Foreground" Value="#565656" />
+        <Setter Property="Padding" Value="70,22,12,12" />
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+
+                    <Grid x:Name="RootElement">
+                        <Border x:Name="Border" Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="40">
+                            <ScrollViewer x:Name="PART_ContentHost" Foreground="{TemplateBinding Foreground}"/>
+                        </Border>
+                        <Border x:Name="DisabledVisualElement" Background="Black"
+                        IsHitTestVisible="False" Margin="1" Opacity="0" CornerRadius="40" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+
+        </Setter>
+        
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="GotFocus">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Width" Duration="0:0:0:0.15" To="409" AutoReverse="True" />
+                            <DoubleAnimation Storyboard.TargetProperty="Height" Duration="0:0:0:0.15" To="84" AutoReverse="True" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="For_TextBox_2"  TargetType="TextBox">
+        <Setter Property="Background" Value="#EDECEC"  />
+        <Setter Property="BorderBrush" Value="#EDECEC" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Foreground" Value="#565656" />
+        <Setter Property="Padding" Value="70,22,12,12" />
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+
+                    <Grid x:Name="RootElement">
+                        <Border x:Name="Border" Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="40">
+                            <ScrollViewer x:Name="PART_ContentHost" Foreground="{TemplateBinding Foreground}"/>
+                        </Border>
+                        <Border x:Name="DisabledVisualElement" Background="Black"
+                        IsHitTestVisible="False" Margin="1" Opacity="0" CornerRadius="40" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+
+        </Setter>
+
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="GotFocus">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Width" Duration="0:0:0:0.15" To="409" AutoReverse="True" />
+                            <DoubleAnimation Storyboard.TargetProperty="Height" Duration="0:0:0:0.15" To="144" AutoReverse="True" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="For_readonly"  TargetType="TextBox">
+        <Setter Property="Background" Value="#EDECEC"  />
+        <Setter Property="BorderBrush" Value="#EDECEC" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Foreground" Value="#565656" />
+        <Setter Property="Padding" Value="40,8,12,12" />
+        <Setter Property="FontSize" Value="25"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+
+                    <Grid x:Name="RootElement">
+                        <Border x:Name="Border" Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="25">
+                            <ScrollViewer x:Name="PART_ContentHost" Foreground="{TemplateBinding Foreground}"/>
+                        </Border>
+                        <Border x:Name="DisabledVisualElement" Background="Black"
+                        IsHitTestVisible="False" Margin="1" Opacity="0" CornerRadius="40" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="For_doctor"  TargetType="TextBox">
+        <Setter Property="Background" Value="#EDECEC"  />
+        <Setter Property="BorderBrush" Value="#EDECEC" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Foreground" Value="#565656" />
+        <Setter Property="Padding" Value="40,8,12,12" />
+        <Setter Property="FontSize" Value="25"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+
+                    <Grid x:Name="RootElement">
+                        <Border x:Name="Border" Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="25">
+                            <ScrollViewer x:Name="PART_ContentHost" Foreground="{TemplateBinding Foreground}"/>
+                        </Border>
+                        <Border x:Name="DisabledVisualElement" Background="Black"
+                        IsHitTestVisible="False" Margin="1" Opacity="0" CornerRadius="40" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="Button_grey" TargetType="Button">
+        <Setter Property="Background" Value="#DCEBEC"/>
+        <Setter Property="Foreground" Value="#565656"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="20" Background="{TemplateBinding Background}" BorderThickness="1">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                        </ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+    <Style x:Key="ComboBoxButtonStyle" TargetType="{x:Type ToggleButton}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                    <Border Background="#E4E4E4" x:Name="border" CornerRadius="0,10,10,0" BorderThickness="0,2,2,2" BorderBrush="#E4E4E4">
+                        <ContentPresenter />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="ComboBoxTextBoxStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Grid>
+                        <Border CornerRadius="10,0,0,10" BorderThickness="2,2,0,2" Background="{TemplateBinding Background}" BorderBrush="#E4E4E4">
+                            <ScrollViewer x:Name="PART_ContentHost"/>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="RoundComboBoxStyle" TargetType="{x:Type ComboBox}">
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ComboBox}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition MaxWidth="18"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox Name="PART_EditableTextBox" IsEnabled="False" Style="{StaticResource ComboBoxTextBoxStyle}" Padding="5,0,0,0" Background="#E4E4E4" Height="{TemplateBinding Height}"/>
+                        <ToggleButton Grid.Column="1" Margin="0" Height="{TemplateBinding Height}" Style="{StaticResource ComboBoxButtonStyle}" Background="#E4E4E4" Focusable="False"  
+                                    IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" ClickMode="Press">
+                            <Path Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Data="M 0 0 L 4 4 L 8 0 Z"   Fill="White"/>
+                        </ToggleButton>
+                        <ContentPresenter Grid.Column="0" Name="ContentSite" Content="{TemplateBinding SelectionBoxItem}" ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"  
+                                        ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,0,0,0"/>
+                        <Popup Grid.Column="0" Name="Popup" Placement="Bottom" IsOpen="{TemplateBinding IsDropDownOpen}" AllowsTransparency="False" Focusable="False" PopupAnimation="Slide" >
+                            <Grid Name="DropDown" SnapsToDevicePixels="True" MinWidth="{TemplateBinding ActualWidth}" MaxHeight="{TemplateBinding MaxDropDownHeight}" >
+                                <Border x:Name="DropDownBorder" BorderThickness="1" CornerRadius="5" Background="#E4E4E4" BorderBrush="#E4E4E4"/>
+                                <ScrollViewer Margin="4,6,4,6" SnapsToDevicePixels="True" Background="#E4E4E4">
+                                    <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" />
+                                </ScrollViewer>
+                            </Grid>
+                        </Popup>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="Button_grey_big" TargetType="Button">
+        <Setter Property="Background" Value="#DCEBEC"/>
+        <Setter Property="Foreground" Value="#565656"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="40" Background="{TemplateBinding Background}" BorderThickness="1">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                        </ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+    <Style x:Key="Button_blue_big" TargetType="Button">
+        <Setter Property="Background" Value="#B5E9FF"/>
+        <Setter Property="Foreground" Value="#565656"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontSize" Value="23"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="40" Background="{TemplateBinding Background}" BorderThickness="1">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                        </ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="Loaded">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Width" Duration="0:0:0:1" To="425"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="Button_darkblue_big" TargetType="Button">
+        <Setter Property="Background" Value="#26A4FF"/>
+        <Setter Property="Foreground" Value="#565656"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontSize" Value="23"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="40" Background="{TemplateBinding Background}" BorderThickness="1">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                        </ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="Loaded">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Width" Duration="0:0:0:1" To="425"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="Button_gray_big" TargetType="Button">
+        <Setter Property="Background" Value="#D9D9D9"/>
+        <Setter Property="Foreground" Value="#565656"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontSize" Value="23"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="40" Background="{TemplateBinding Background}" BorderThickness="1">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                        </ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="Loaded">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Width" Duration="0:0:0:1" To="425"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="Button_green" TargetType="Button">
+        <Setter Property="Background" Value="#ABFFE6"/>
+        <Setter Property="Foreground" Value="#565656"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontSize" Value="23"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="20" Background="{TemplateBinding Background}" BorderThickness="1">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                        </ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="GotFocus">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Width" Duration="0:0:0:0.15" To="183" AutoReverse="True" />
+                            <DoubleAnimation Storyboard.TargetProperty="Height" Duration="0:0:0:0.15" To="44" AutoReverse="True" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="Button_green_withoutanimation" TargetType="Button">
+        <Setter Property="Background" Value="#ABFFE6"/>
+        <Setter Property="Foreground" Value="#565656"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontSize" Value="23"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="20" Background="{TemplateBinding Background}" BorderThickness="1">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                        </ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="Button_yes_no" TargetType="Button">
+        <Setter Property="Background" Value="#ABFFE6"/>
+        <Setter Property="Foreground" Value="#565656"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontSize" Value="23"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="20" Background="{TemplateBinding Background}" BorderThickness="1">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                        </ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <ImageBrush x:Key="logout" ImageSource="/image/logout.png" Stretch="Fill" />
+
+    <Style x:Key="logoutclouse" TargetType="{x:Type Button}">
+        <Setter Property="Height" Value="20" />
+        <Setter Property="Width" Value="20" />
+        <Setter Property="HorizontalAlignment" Value="Right" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="Margin" Value="0,10,10,0" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border" BorderThickness="0" Background="{StaticResource logout}">
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+    <Style x:Key="Button_foradmins" TargetType="Button">
+        <Setter Property="Background" Value="#B6F9FF"/>
+        <Setter Property="Foreground" Value="#565656"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontSize" Value="23"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="40" Background="{TemplateBinding Background}" BorderThickness="1">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+                        </ContentPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="Loaded">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Width" Duration="0:0:0:1" To="400"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+  
+
+
+
+    <!-- Добавьте это в ваш ResourceDictionary -->
+    <Style x:Key="DatePickerStyle" TargetType="DatePicker">
+        <Setter Property="Background" Value="#EDECEC"/>
+        <Setter Property="BorderBrush" Value="#EDECEC"/>
+        <Setter Property="Foreground" Value="#565656"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="Width" Value="300"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="DatePicker">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- TextBox часть -->
+                        <TextBox 
+                        x:Name="PART_TextBox"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="1"
+                        Foreground="{TemplateBinding Foreground}"
+                        FontFamily="{TemplateBinding FontFamily}"
+                        FontSize="{TemplateBinding FontSize}"
+                        FontWeight="{TemplateBinding FontWeight}"
+                        Padding="10,5"
+                        IsReadOnly="{Binding IsReadOnly, RelativeSource={RelativeSource TemplatedParent}}"
+                        VerticalContentAlignment="Center"
+                        HorizontalContentAlignment="Left"/>
+
+                        <!-- Кнопка календаря -->
+                        <Button 
+                        Grid.Column="1"
+                        Width="30"
+                        Margin="5,0,0,0"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        Focusable="False">
+                            <Path 
+                            Data="M0,0L4,4 8,0"
+                            Stroke="#565656"
+                            StrokeThickness="2"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+                        </Button>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+     <!--Стиль для кнопки с мятным оттенком--> 
+    <Style x:Key="MintButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="#FF66E7F3"/>
+        <Setter Property="Foreground" Value="#565656"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="23"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="40" 
+                        Background="{TemplateBinding Background}" 
+                        BorderThickness="1">
+                        <ContentPresenter HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="Loaded">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Width" 
+                                       Duration="0:0:0:1" 
+                                       To="400"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+   
+    <!--Стиль для кнопки с мятным оттенком-->
+    <Style x:Key="SaladButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="#99FF99"/>
+        <Setter Property="Foreground" Value="#565656"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="FontSize" Value="23"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="40" 
+                    Background="{TemplateBinding Background}" 
+                    BorderThickness="1">
+                        <ContentPresenter HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="Loaded">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Width" 
+                                   Duration="0:0:0:1" 
+                                   To="400"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="For_TextBox_NoAnim"  TargetType="TextBox">
+        <Setter Property="Background" Value="#EDECEC"  />
+        <Setter Property="BorderBrush" Value="#EDECEC" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Foreground" Value="#565656" />
+        <Setter Property="Padding" Value="70,22,12,12" />
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+
+                    <Grid x:Name="RootElement">
+                        <Border x:Name="Border" Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
+                    CornerRadius="40">
+                            <ScrollViewer x:Name="PART_ContentHost" Foreground="{TemplateBinding Foreground}"/>
+                        </Border>
+                        <Border x:Name="DisabledVisualElement" Background="Black"
+                    IsHitTestVisible="False" Margin="1" Opacity="0" CornerRadius="40" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+
+        </Setter>
+
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="GotFocus">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <!--<DoubleAnimation Storyboard.TargetProperty="Width" Duration="0:0:0:0.15" To="409" AutoReverse="True" />-->
+                            <!--<DoubleAnimation Storyboard.TargetProperty="Height" Duration="0:0:0:0.15" To="84" AutoReverse="True" />-->
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="For_TextBox_2_NoAnim"  TargetType="TextBox">
+        <Setter Property="Background" Value="#EDECEC"  />
+        <Setter Property="BorderBrush" Value="#EDECEC" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Foreground" Value="#565656" />
+        <Setter Property="Padding" Value="70,22,12,12" />
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+
+                    <Grid x:Name="RootElement">
+                        <Border x:Name="Border" Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
+                    CornerRadius="40">
+                            <ScrollViewer x:Name="PART_ContentHost" Foreground="{TemplateBinding Foreground}"/>
+                        </Border>
+                        <Border x:Name="DisabledVisualElement" Background="Black"
+                    IsHitTestVisible="False" Margin="1" Opacity="0" CornerRadius="40" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+
+        </Setter>
+
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="GotFocus">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <!--<DoubleAnimation Storyboard.TargetProperty="Width" Duration="0:0:0:0.15" To="409" AutoReverse="True" />
+                            <DoubleAnimation Storyboard.TargetProperty="Height" Duration="0:0:0:0.15" To="144" AutoReverse="True" />-->
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="For_TextBox_3_NoAnim"  TargetType="TextBox">
+        <Setter Property="Background" Value="#EDECEC"  />
+        <Setter Property="BorderBrush" Value="#EDECEC" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Foreground" Value="#565656" />
+        <Setter Property="Padding" Value="70,22,12,12" />
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontWeight" Value="Thin"/>
+        <Setter Property="FontFamily" Value="Inter"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+
+                    <Grid x:Name="RootElement">
+                        <Border x:Name="Border" Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
+                CornerRadius="40">
+                            <ScrollViewer x:Name="PART_ContentHost" Foreground="{TemplateBinding Foreground}"/>
+                        </Border>
+                        <Border x:Name="DisabledVisualElement" Background="Black"
+                IsHitTestVisible="False" Margin="1" Opacity="0" CornerRadius="40" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+
+        </Setter>
+
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="GotFocus">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <!--<DoubleAnimation Storyboard.TargetProperty="Width" Duration="0:0:0:0.15" To="409" AutoReverse="True" />
+                        <DoubleAnimation Storyboard.TargetProperty="Height" Duration="0:0:0:0.15" To="144" AutoReverse="True" />-->
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+
+</ResourceDictionary>

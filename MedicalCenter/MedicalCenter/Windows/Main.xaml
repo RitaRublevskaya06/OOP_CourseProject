@@ -1,0 +1,48 @@
+﻿<Page x:Class="MedicalCenter.Windows.Main"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MedicalCenter"
+      mc:Ignorable="d" 
+        d:DesignHeight="823" d:DesignWidth="1013"
+  Title="Main">
+
+    <Grid  Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="69"/>
+            <RowDefinition Height="398*"/>
+            <RowDefinition Height="356"/>
+        </Grid.RowDefinitions>
+
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="463"/>
+                <ColumnDefinition Width="145.6"/>
+                <ColumnDefinition Width="404"/>
+            </Grid.ColumnDefinitions>
+            <Button Name="Ordercreate" Click="Place_Click"  Style="{StaticResource Button_gray_big}" Height="87.2" Width="0"  Content="Записаться на прием" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Margin="48.8,24,73.8,245" Grid.ColumnSpan="2" />
+            <Image Width="104.8" Height="104.8"  Source="/image/timetable.png" Grid.Column="1" Margin="19.8,16,20.8,235" MouseDown="Place_Click"/>
+            <Button Click="Place1_Click"  Style="{StaticResource Button_blue_big}" Height="87.2" Width="0" x:Name="Place2" Content="г.Минск, ул.Свердлого 1к10" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Margin="48.8,134,73.8,135" Grid.ColumnSpan="2" />
+            <Button Click="Place1_Click"  Style="{StaticResource Button_darkblue_big}" Height="87.2" Width="0" x:Name="Place1"  Content="+375(33)-123-45-67" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Margin="48.8,252,73.8,17" Grid.ColumnSpan="2" />
+            <Image  Width="104.8" Height="104.8"  Grid.Column="1" Source="/image/place.png" MouseDown="Image_MouseDown"/>
+            <Image Width="104.8" Height="104.8"   Grid.Column="1"  Source="/image/smartphone (1).png" Margin="19.8,241,20.8,10"  MouseDown="Image_MouseDown"/>
+            <Button Click="Allorder_Click"   Style="{StaticResource Button_foradmins}"  Height="90" Width="0" x:Name="Allorder" Background="#B6F9FF" Content="Просмотреть заказы" RenderTransformOrigin="0.5,0.5" Margin="20,247,43.2,14" />
+            <Image Name="foradmin" Width="104.8" Height="104.8"  Source="/image/ticket.png" Margin="5,241,354.2,11"  MouseDown="foradmin_MouseDown"/>
+            <Ellipse  x:Name="ConfirmServiceEllipse" Fill="#FF66E7F3" Width="105" Height="105" Margin="4,128,354,123" />
+            <Button x:Name="ConfirmService" Click="ConfirmService_Click" Style="{StaticResource MintButtonStyle}" Height="90" Width="400" Content="Подтвердить услугу" RenderTransformOrigin="0.5,0.5" Margin="26,132,37,134" />
+            <Image Name="imgConfirmService" Width="104.8" Height="104.8" Source="/image/notebook1.png" Margin="7,126,351,125" MouseDown="imgConfirmService_MouseDown"/>
+            <Ellipse x:Name="AddPrescriptionEllipse" Fill="#99FF99" Width="105" Height="105" Margin="4,15,353,236" />
+            <Button x:Name="AddPrescriptionBtn" Click="AddPrescription_Click" Style="{StaticResource SaladButtonStyle}" Height="90" Width="400" Content="Назначить рецепт" RenderTransformOrigin="0.5,0.5" Margin="21,19,42,247" />
+            <Image Name="imgAddPrescription" Width="104.8" Height="104.8" Source="/image/prescription.png" Margin="10,13,348,238" MouseDown="imgAddPrescription_MouseDown"/>
+
+        </Grid>
+        <TextBlock Style="{StaticResource Textgrey}" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Ваше здоровье - наша забота" VerticalAlignment="Center" FontSize="36" Width="496" Grid.Row="0" Height="43"/>
+        <Image Margin="0,0.2,-0.2,0.2" Source="/image/doctorss51.jpg" Grid.Row="1" Grid.ColumnSpan="2" Stretch="UniformToFill" />
+    </Grid>
+</Page>

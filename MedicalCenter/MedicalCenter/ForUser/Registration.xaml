@@ -1,0 +1,46 @@
+﻿<Page x:Class="MedicalCenter.ForUser.Registration"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MedicalCenter.ForUser"
+      mc:Ignorable="d" 
+      d:DesignHeight="823" d:DesignWidth="684"
+      MinHeight="823" MinWidth="684"
+      Title="Registration">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="127"/>
+            <ColumnDefinition Width="429"/>
+            <ColumnDefinition Width="127"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="105"/>
+            <RowDefinition Height="95"/>
+            <RowDefinition Height="95"/>
+            <RowDefinition Height="95"/>
+            <RowDefinition Height="95"/>
+            <RowDefinition Height="95"/>
+            <RowDefinition Height="95"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image Source="/image/LOGO1.png" Margin="93.8,0,94.8,6" Height="92" VerticalAlignment="Bottom" Grid.Column="1" MouseDown="Image_MouseDown"/>
+        <TextBox x:Name="email"  GotFocus="email_GotFocus" LostFocus="email_LostFocus" Style="{StaticResource For_TextBox}" HorizontalAlignment="Left" Height="80" Margin="11.8,1.2,0,0" Grid.Row="2" TextWrapping="NoWrap" Text="электронная почта" VerticalAlignment="Top" Width="405" Grid.Column="1" TabIndex="2147483644"/>
+        <TextBox x:Name="name" GotFocus="name_GotFocus" LostFocus="name_LostFocus" Style="{StaticResource For_TextBox}" HorizontalAlignment="Left" Height="80" Margin="11.8,0,0,11.2" Grid.Row="3" TextWrapping="NoWrap" Text="имя" VerticalAlignment="Bottom" Width="405" Grid.Column="1"></TextBox>
+        <TextBox x:Name="Logine" GotFocus="Logine_GotFocus" LostFocus="Logine_LostFocus" Style="{StaticResource For_TextBox}" HorizontalAlignment="Left" Height="80" Margin="11.8,0.6,0,0" Grid.Row="5" TextWrapping="NoWrap" Text="логин" VerticalAlignment="Top" Width="405" Grid.Column="1" />
+        <TextBox x:Name="Password" GotFocus="Password_GotFocus" LostFocus="Password_LostFocus" Style="{StaticResource For_TextBox}" HorizontalAlignment="Left" Height="80" Margin="11.8,0.4,0,0" Grid.Row="6" TextWrapping="NoWrap" Text="пароль" VerticalAlignment="Top" Width="405" Grid.Column="1"/>
+        <Button  Style="{StaticResource Button_for_login}" Content="Регистрация" HorizontalAlignment="Left" VerticalAlignment="Top" Width="405" Margin="12.8,3.2,0,0" Grid.Row="7" Height="80" Grid.Column="1" Click="Button_Click" RenderTransformOrigin="0.558,1.645"/>
+        <Image Margin="20.8,12.6,351.8,25.6" Grid.Row="5" Source="/image/user.png" Stretch="Fill" Grid.Column="1"/>
+        <Image Grid.Column="1" Margin="20.8,12.6,351.8,25.6" Grid.Row="6" Source="/image/key.png" Stretch="Fill" RenderTransformOrigin="0.482,0.04"/>
+        <Image  Margin="20.8,12.6,351.8,25.6" Grid.Row="3" Source="/image/passport (3).png" Stretch="Fill" Grid.Column="1" RenderTransformOrigin="0.725,3.1"/>
+        <Image  Margin="20.8,12.6,351.8,25.6" Source="/image/premium-icon-mail-3153442.png" Stretch="Fill" Grid.Column="1" RenderTransformOrigin="0.725,3.1" Grid.Row="2"/>
+        <TextBlock Style="{StaticResource Textgrey}" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Зарегистрируйтесь, и ваше   здоровье скажет спасибо" VerticalAlignment="Top" Grid.Column="1" Margin="40.8,14,0,0" Grid.Row="1" Width="355" />
+        <Image Name ="Yesornoemail" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="59" Grid.Column="2" Margin="8.2,21.2,0,0" Grid.Row="2" />
+        <Image Name ="Yesornoname" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="59" Grid.Column="2" Margin="10.2,15.8,0,0" Grid.Row="3" />
+        <Image Name ="Yesornolastname" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="59" Grid.Column="2" Margin="10.2,15.6,0,0" Grid.Row="4" />
+        <TextBox x:Name="Surrename" GotFocus="Surrename_GotFocus" LostFocus="Surrename_LostFocus" Style="{StaticResource For_TextBox}" HorizontalAlignment="Left" Height="80" Margin="11.8,0.8,0,0" Grid.Row="4" TextWrapping="NoWrap" Text="фамилия" VerticalAlignment="Top" Width="405" Grid.Column="1"/>
+        <Image Margin="20.8,12.6,351.8,25.6" Grid.Row="4" Source="/image/id-card.png" Stretch="Fill" Grid.Column="1" RenderTransformOrigin="0.558,1.017"/>
+        <Image x:Name ="Yesornologine" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="59" Grid.Column="2" Margin="8.2,15.4,0,0" Grid.Row="5" />
+        <Image x:Name ="Yesornopassword" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="59" Grid.Column="2" Margin="10.2,12.2,0,0" Grid.Row="6" />
+    </Grid>
+</Page>

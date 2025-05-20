@@ -1,0 +1,208 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CourseProject_02\\MedicalCenter\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|d:\\courseproject_02\\medicalcenter\\medicalcenter\\foruser\\createorder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|solutionrelative:medicalcenter\\foruser\\createorder.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|d:\\courseproject_02\\medicalcenter\\medicalcenter\\foruser\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|solutionrelative:medicalcenter\\foruser\\registration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|D:\\CourseProject_02\\MedicalCenter\\medicalcenter\\foruser\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|solutionrelative:medicalcenter\\foruser\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|D:\\CourseProject_02\\MedicalCenter\\medicalcenter\\windows\\main.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|solutionrelative:medicalcenter\\windows\\main.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|D:\\CourseProject_02\\MedicalCenter\\medicalcenter\\foradmin\\registrationofdoctor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|solutionrelative:medicalcenter\\foradmin\\registrationofdoctor.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|D:\\CourseProject_02\\MedicalCenter\\medicalcenter\\foradmin\\registrationofdoctor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|solutionrelative:medicalcenter\\foradmin\\registrationofdoctor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|D:\\CourseProject_02\\MedicalCenter\\medicalcenter\\classes\\clients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|solutionrelative:medicalcenter\\classes\\clients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|D:\\CourseProject_02\\MedicalCenter\\medicalcenter\\windows\\mainharmony.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|solutionrelative:medicalcenter\\windows\\mainharmony.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|D:\\CourseProject_02\\MedicalCenter\\medicalcenter\\windows\\mainharmony.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|solutionrelative:medicalcenter\\windows\\mainharmony.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|D:\\CourseProject_02\\MedicalCenter\\medicalcenter\\windows\\aboutas.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|solutionrelative:medicalcenter\\windows\\aboutas.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|D:\\CourseProject_02\\MedicalCenter\\medicalcenter\\windows\\aboutas.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CFC9228-24DC-4BE0-B834-26D844844A62}|MedicalCenter\\MedicalCenter.csproj|solutionrelative:medicalcenter\\windows\\aboutas.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Createorder.xaml.cs",
+              "DocumentMoniker": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\ForUser\\Createorder.xaml.cs",
+              "RelativeDocumentMoniker": "MedicalCenter\\ForUser\\Createorder.xaml.cs",
+              "ToolTip": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\ForUser\\Createorder.xaml.cs",
+              "RelativeToolTip": "MedicalCenter\\ForUser\\Createorder.xaml.cs",
+              "ViewState": "AgIAANwCAAAAAAAAAAAAABIDAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T14:40:05.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Main.xaml.cs",
+              "DocumentMoniker": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\Windows\\Main.xaml.cs",
+              "RelativeDocumentMoniker": "MedicalCenter\\Windows\\Main.xaml.cs",
+              "ToolTip": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\Windows\\Main.xaml.cs",
+              "RelativeToolTip": "MedicalCenter\\Windows\\Main.xaml.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T07:21:33.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\ForUser\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "MedicalCenter\\ForUser\\Login.xaml.cs",
+              "ToolTip": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\ForUser\\Login.xaml.cs",
+              "RelativeToolTip": "MedicalCenter\\ForUser\\Login.xaml.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T07:21:05.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Registration.xaml.cs",
+              "DocumentMoniker": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\ForUser\\Registration.xaml.cs",
+              "RelativeDocumentMoniker": "MedicalCenter\\ForUser\\Registration.xaml.cs",
+              "ToolTip": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\ForUser\\Registration.xaml.cs",
+              "RelativeToolTip": "MedicalCenter\\ForUser\\Registration.xaml.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T07:19:55.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegistrationofDoctor.xaml.cs",
+              "DocumentMoniker": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\ForAdmin\\RegistrationofDoctor.xaml.cs",
+              "RelativeDocumentMoniker": "MedicalCenter\\ForAdmin\\RegistrationofDoctor.xaml.cs",
+              "ToolTip": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\ForAdmin\\RegistrationofDoctor.xaml.cs",
+              "RelativeToolTip": "MedicalCenter\\ForAdmin\\RegistrationofDoctor.xaml.cs",
+              "ViewState": "AgIAAIABAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T07:13:12.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegistrationofDoctor.xaml",
+              "DocumentMoniker": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\ForAdmin\\RegistrationofDoctor.xaml",
+              "RelativeDocumentMoniker": "MedicalCenter\\ForAdmin\\RegistrationofDoctor.xaml",
+              "ToolTip": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\ForAdmin\\RegistrationofDoctor.xaml",
+              "RelativeToolTip": "MedicalCenter\\ForAdmin\\RegistrationofDoctor.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-19T07:13:08.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Clients.cs",
+              "DocumentMoniker": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\Classes\\Clients.cs",
+              "RelativeDocumentMoniker": "MedicalCenter\\Classes\\Clients.cs",
+              "ToolTip": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\Classes\\Clients.cs",
+              "RelativeToolTip": "MedicalCenter\\Classes\\Clients.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T06:56:27.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainHarmony.xaml",
+              "DocumentMoniker": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\Windows\\MainHarmony.xaml",
+              "RelativeDocumentMoniker": "MedicalCenter\\Windows\\MainHarmony.xaml",
+              "ToolTip": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\Windows\\MainHarmony.xaml",
+              "RelativeToolTip": "MedicalCenter\\Windows\\MainHarmony.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-19T05:54:20.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainHarmony.xaml.cs",
+              "DocumentMoniker": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\Windows\\MainHarmony.xaml.cs",
+              "RelativeDocumentMoniker": "MedicalCenter\\Windows\\MainHarmony.xaml.cs",
+              "ToolTip": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\Windows\\MainHarmony.xaml.cs",
+              "RelativeToolTip": "MedicalCenter\\Windows\\MainHarmony.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:54:15.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Aboutas.xaml",
+              "DocumentMoniker": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\Windows\\Aboutas.xaml",
+              "RelativeDocumentMoniker": "MedicalCenter\\Windows\\Aboutas.xaml",
+              "ToolTip": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\Windows\\Aboutas.xaml",
+              "RelativeToolTip": "MedicalCenter\\Windows\\Aboutas.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-19T05:53:45.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Aboutas.xaml.cs",
+              "DocumentMoniker": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\Windows\\Aboutas.xaml.cs",
+              "RelativeDocumentMoniker": "MedicalCenter\\Windows\\Aboutas.xaml.cs",
+              "ToolTip": "D:\\CourseProject_02\\MedicalCenter\\MedicalCenter\\Windows\\Aboutas.xaml.cs",
+              "RelativeToolTip": "MedicalCenter\\Windows\\Aboutas.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:53:27.317Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

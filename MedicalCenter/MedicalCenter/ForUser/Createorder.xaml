@@ -1,0 +1,45 @@
+﻿<Window x:Class="MedicalCenter.ForUser.Createorder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedicalCenter.ForUser"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Createorder"   d:DesignHeight="823" d:DesignWidth="684"
+        MinHeight="823" MinWidth="684" MaxHeight="823" MaxWidth="684">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="127"/>
+            <ColumnDefinition Width="429"/>
+            <ColumnDefinition Width="127"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="105"/>
+            <RowDefinition Height="95"/>
+            <RowDefinition Height="95"/>
+            <RowDefinition Height="95"/>
+            <RowDefinition Height="95"/>
+
+            <RowDefinition Height="96"/>
+            <RowDefinition Height="93.6"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image Source="/image/LOGO1.png" Margin="93.8,0,95,5.8" Height="92" VerticalAlignment="Bottom" Grid.Column="1"/>
+        <ComboBox Name="Spesname"  Style="{StaticResource RoundComboBoxStyle}" FontFamily="Inter" FontSize="20" Foreground="#565656"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="329" Margin="47.8,34.2,0,0" Grid.Row="1" Height="61" Grid.Column="1" DropDownClosed="Spesname_DropDownClosed" >
+            <ComboBoxItem Content="Процедура"/>
+        </ComboBox>
+        <ComboBox x:Name="DoctorName"  Style="{StaticResource RoundComboBoxStyle}" FontFamily="Inter" FontSize="20" Foreground="#565656"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="329" Margin="47.8,34,0,0" Grid.Row="2" Height="61" Grid.Column="1" DropDownClosed="DoctorName_DropDownClosed" >
+            <ComboBoxItem Content="Врач"/>
+        </ComboBox>
+        <Image Name="foto" HorizontalAlignment="Left" Height="90" VerticalAlignment="Top" Width="100" Grid.Column="1" Margin="47.8,4.8,0,0" Grid.Row="3"/>
+        <TextBlock Style="{StaticResource Textgrey}"  HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="179" Grid.Column="1" Margin="197.8,32.8,0,0" Grid.Row="3"/>
+        <TextBlock Style="{StaticResource Textgrey}" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Дата" Width="115" Margin="127,10.4,0,53.6" Grid.Row="5" RenderTransformOrigin="0.172,0.485" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="Date"  DropDownClosed="Date_DropDownClosed" Style="{StaticResource RoundComboBoxStyle}" FontFamily="Inter" FontSize="15" Foreground="#565656"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="266" Margin="137.8,1.4,0,0" Grid.Row="5" Height="47" Grid.Column="1"/>
+        <TextBlock Style="{StaticResource Textgrey}" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Время" VerticalAlignment="Top" Height="32" Width="115" Margin="127,10.4,0,0" Grid.Row="6" RenderTransformOrigin="0.172,0.485" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="Time"  Style="{StaticResource RoundComboBoxStyle}" FontFamily="Inter" FontSize="15" Foreground="#565656"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="266" Margin="137.8,0.4,0,0" Grid.Row="6" Height="47" Grid.Column="1"/>
+        <Button  Name="Create" Click="Create_Click"  Style="{StaticResource Button_for_login}" Content="Заказать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="405" Margin="12.8,3.2,0,0" Grid.Row="7" Height="80" Grid.Column="1" RenderTransformOrigin="0.558,1.645"/>
+        <TextBlock Style="{StaticResource Textgrey}" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Выберите время и дату" VerticalAlignment="Top" Height="47" Width="310" Grid.Column="1" Margin="66.8,9.6,0,0" Grid.Row="4" RenderTransformOrigin="0.172,0.485"/>
+        <TextBlock Name="Warring" Foreground="#FFABAB"  Style="{StaticResource Textgrey}" HorizontalAlignment="Left" TextWrapping="NoWrap"  Text="" VerticalAlignment="Top"  FontSize="20"  Width="355" Grid.Column="1" Margin="34.8,67.4,0,0" Grid.Row="6"/>
+    </Grid>
+</Window>
